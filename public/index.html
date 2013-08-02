@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>pkmn</title>
+    <script src="/js/lib/jquery-1.10.2.min.js"></script>
+
+    <script src="/js/util.js"></script>
+    <script src="/js/network.js"></script>
+
+    <script src="/js/pokedex.js"></script>
+    <script src="/js/pokemon.js"></script>
+    <script src="/js/overworld.js"></script>
+
+    <script src="/js/renderer.js"></script>
+    <script src="/js/main.js"></script>
+
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <div id="sprites" style="display: none;"></div>
+    <div id="welcome">
+        <form onsubmit="javascript:do_connect();return false;">
+            name:
+            <input type="text" id="my_name"></input><br />
+            pokemon:
+            <span id="picker"></span><br />
+            <input type="submit" id="connect"></input>
+        </form>
+    </div>
+    <canvas id="surface" width="800" height="600" style="display: none;"></canvas>
+  </body>
+</html>
